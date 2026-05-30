@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://devtoolbox.cc/</loc><priority>1.0</priority><changefreq>daily</changefreq></url>
+  <url><loc>https://devtoolbox.cc/json-formatter</loc><priority>0.8</priority></url>
+  <url><loc>https://devtoolbox.cc/base64</loc><priority>0.8</priority></url>
+  <url><loc>https://devtoolbox.cc/jwt-decoder</loc><priority>0.8</priority></url>
+  <url><loc>https://devtoolbox.cc/regex-tester</loc><priority>0.8</priority></url>
+  <url><loc>https://devtoolbox.cc/uuid-generator</loc><priority>0.8</priority></url>
+  <url><loc>https://devtoolbox.cc/timestamp-converter</loc><priority>0.8</priority></url>
+  <url><loc>https://devtoolbox.cc/color-picker</loc><priority>0.8</priority></url>
+  <url><loc>https://devtoolbox.cc/diff-checker</loc><priority>0.8</priority></url>
+  <url><loc>https://devtoolbox.cc/markdown-preview</loc><priority>0.8</priority></url>
+  <url><loc>https://devtoolbox.cc/cron-builder</loc><priority>0.8</priority></url>
+  <url><loc>https://devtoolbox.cc/hash-generator</loc><priority>0.8</priority></url>
+  <url><loc>https://devtoolbox.cc/url-encoder</loc><priority>0.8</priority></url>
+  <url><loc>https://devtoolbox.cc/lorem-ipsum</loc><priority>0.8</priority></url>
+</urlset>
