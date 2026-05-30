@@ -1,65 +1,79 @@
-import Image from "next/image";
+import Link from "next/link";
+
+const tools = [
+  { name: "JSON Formatter", desc: "Format, validate, and minify JSON data with syntax highlighting", icon: "📋", href: "/json-formatter", category: "Data" },
+  { name: "Base64 Encoder/Decoder", desc: "Encode text to Base64 or decode Base64 back to text", icon: "🔐", href: "/base64", category: "Encoding" },
+  { name: "JWT Decoder", desc: "Decode and inspect JSON Web Tokens (JWT) header, payload, and signature", icon: "🔑", href: "/jwt-decoder", category: "Security" },
+  { name: "Regex Tester", desc: "Test regular expressions with real-time matching and group capture", icon: "🔍", href: "/regex-tester", category: "Text" },
+  { name: "UUID Generator", desc: "Generate UUID v4, v1, or NIL identifiers in bulk", icon: "🆔", href: "/uuid-generator", category: "Generator" },
+  { name: "Timestamp Converter", desc: "Convert between Unix timestamps and human-readable dates", icon: "🕐", href: "/timestamp-converter", category: "Time" },
+  { name: "Color Picker", desc: "Convert colors between HEX, RGB, HSL with visual picker", icon: "🎨", href: "/color-picker", category: "Design" },
+  { name: "Diff Checker", desc: "Compare two texts side-by-side and see differences highlighted", icon: "📊", href: "/diff-checker", category: "Text" },
+  { name: "Markdown Preview", desc: "Write Markdown with live preview and HTML export", icon: "📝", href: "/markdown-preview", category: "Writing" },
+  { name: "Cron Expression Builder", desc: "Build and understand cron expressions with visual scheduler", icon: "⏰", href: "/cron-builder", category: "DevOps" },
+  { name: "Hash Generator", desc: "Generate MD5, SHA-1, SHA-256, SHA-512 hashes instantly", icon: "🔏", href: "/hash-generator", category: "Security" },
+  { name: "URL Encoder/Decoder", desc: "Encode or decode URL components and query strings", icon: "🔗", href: "/url-encoder", category: "Encoding" },
+  { name: "Lorem Ipsum Generator", desc: "Generate placeholder text in paragraphs, sentences, or words", icon: "📄", href: "/lorem-ipsum", category: "Generator" },
+];
+
+const categories = [...new Set(tools.map(t => t.category))];
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+    <div>
+      {/* Hero */}
+      <section className="text-center py-12 mb-8">
+        <h1 className="text-4xl sm:text-5xl font-bold mb-4 bg-gradient-to-r from-[var(--accent)] to-[var(--success)] bg-clip-text text-transparent">
+          Free Developer Tools
+        </h1>
+        <p className="text-lg text-[var(--text-secondary)] max-w-2xl mx-auto">
+          Fast, private, and completely free. All processing happens in your browser — your data never leaves your device. No signup required.
+        </p>
+      </section>
+
+      {/* Ad banner placeholder */}
+      <div className="bg-[var(--bg-card)] border border-[var(--border-color)] rounded-lg p-4 mb-8 text-center text-sm text-[var(--text-secondary)]">
+        {/* Google AdSense ad unit will go here */}
+        <span>Ad Space — Supporting free tools for developers</span>
+      </div>
+
+      {/* Tools Grid */}
+      {categories.map(cat => (
+        <section key={cat} className="mb-10">
+          <h2 className="text-sm font-semibold uppercase tracking-wider text-[var(--accent)] mb-4">{cat}</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {tools.filter(t => t.category === cat).map(tool => (
+              <Link key={tool.href} href={tool.href} className="tool-card group">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">{tool.icon}</span>
+                  <div>
+                    <h3 className="font-semibold text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors">{tool.name}</h3>
+                    <p className="text-sm text-[var(--text-secondary)] mt-1">{tool.desc}</p>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+      ))}
+
+      {/* SEO content */}
+      <section className="mt-12 prose prose-invert max-w-none text-[var(--text-secondary)]">
+        <h2 className="text-[var(--text-primary)]">About DevToolBox</h2>
+        <p>
+          DevToolBox provides a comprehensive suite of free online developer tools. Whether you need to format JSON, 
+          encode Base64, decode JWT tokens, test regular expressions, generate UUIDs, or convert timestamps — we&apos;ve got you covered.
+          Every tool runs entirely in your browser using client-side JavaScript, ensuring your data stays private and secure.
+        </p>
+        <h3 className="text-[var(--text-primary)]">Why DevToolBox?</h3>
+        <ul>
+          <li>100% free, no signup or account required</li>
+          <li>All processing is client-side — your data never leaves your browser</li>
+          <li>Fast, modern interface optimized for developer workflows</li>
+          <li>Mobile-responsive design — use on any device</li>
+          <li>Dark mode by default, because developers prefer it</li>
+        </ul>
+      </section>
     </div>
   );
 }
