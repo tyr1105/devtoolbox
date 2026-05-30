@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
 
-## Getting Started
+# 🛠️ DevToolBox
 
-First, run the development server:
+### 50+ Free Online Developer Tools | No Signup | Client-Side Processing
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+[![在线使用](https://img.shields.io/badge/Try_Live-Demo-0EA5E9?style=for-the-badge)](https://tyr1105.github.io/devtoolbox/)
+[![价格](https://img.shields.io/badge/Price-Free-22C55E?style=for-the-badge)](https://tyr1105.github.io/devtoolbox/)
+[![无需注册](https://img.shields.io/badge/No-Signup-F59E0B?style=for-the-badge)](https://tyr1105.github.io/devtoolbox/)
+[![纯浏览器处理](https://img.shields.io/badge/Client_Side-Privacy_Safe-purple?style=for-the-badge)](https://tyr1105.github.io/devtoolbox/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**👉 [Try it Now](https://tyr1105.github.io/devtoolbox/)**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+</div>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## ✨ 工具列表
 
-To learn more about Next.js, take a look at the following resources:
+| 分类 | 工具 | 说明 |
+|------|------|------|
+| 📊 Data | JSON Formatter | Format, validate, minify JSON |
+| 🔐 Encoding | Base64 Encoder/Decoder | Encode/decode Base64 |
+| 🔐 Encoding | URL Encoder/Decoder | Encode/decode URL components |
+| 🔑 Security | JWT Decoder | Decode and inspect JWT tokens |
+| 🔑 Security | Hash Generator | MD5, SHA-1, SHA-256, SHA-512 |
+| 🔍 Text | Regex Tester | Real-time regex matching |
+| 🔍 Text | Diff Checker | Side-by-side text comparison |
+| 🆔 Generator | UUID Generator | UUID v4, v1, NIL in bulk |
+| 🆔 Generator | Lorem Ipsum Generator | Placeholder text |
+| 🕐 Time | Timestamp Converter | Unix ↔ human-readable |
+| 🎨 Design | Color Picker | HEX, RGB, HSL conversion |
+| 📝 Writing | Markdown Preview | Live preview + HTML export |
+| ⏰ DevOps | Cron Expression Builder | Visual cron scheduler |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔥 Why DevToolBox?
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- ✅ **100% Free** — No limits, no hidden charges
+- ✅ **No Signup** — Open and use instantly
+- ✅ **Privacy First** — All processing in your browser
+- ✅ **Dark Mode** — Easy on the eyes
+- ✅ **Responsive** — Works on any device
+- ✅ **Fast** — No server round-trips
 
-## Deploy on Vercel
+## 🛠️ Tech Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Next.js 15 + React 19 + TypeScript + Tailwind CSS
+- 100% client-side, zero backend
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🌐 Live Demo
+
+👉 **[https://tyr1105.github.io/devtoolbox/](https://tyr1105.github.io/devtoolbox/)**
+
+## 🧰 More Free Tools
+
+万能工具箱 — 14+ free tools: [https://tyr1105.github.io/](https://tyr1105.github.io/)
+
+## 📄 License
+
+MIT License
